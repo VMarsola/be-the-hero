@@ -1,0 +1,16 @@
+form.cadastro{
+    width: 100%;
+    max-width: 450px;
+
+    & > input {
+        margin-top: 18px;
+    }
+
+    &>.input-group {
+        display: flex;
+
+        & > input + input {
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+
+//colors
+$branco:#fff;
+// $cor-fundo:#f0f0f5; fundo branco  
+$cor-fundo:#141D26;
+$vermelho:#e02041;
+$cinza-medio:#dcdce6;
+$cinza-escuro: #41414d;
+$chumbo:#333333;
+$cor-texto:#fff;
+$cor-subtexto:#fff;
+//fonts
+%texto{
+    font:400 14px roboto, sans-serif ;
+}
+
+body {
+    @extend %texto;
+    background: $cor-fundo;
+    -webkit-font-smoothing: antialiased;
+}
+
+button{
+    cursor: pointer;
+}
+
+form input{
+    width: 100%;
+    height: 60px;
+    color:$chumbo ;
+    border: 1px solid $cinza-medio;
+    border-radius:8px;
+    padding: 0 24px;
+}
+
+.texto {
+    color: $cor-texto;
+}
+.sub-texto{
+    color:$cor-subtexto;
+}
+
+.button{
+    width:100%;
+    height: 60px;
+    background: $vermelho;
+    border: 0;
+    border-radius: 8px;
+    color: $branco;
+    font-weight: bold;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(90%);
+    }
+}
+
+textarea{
+    width: 100%;
+    min-height: 140px;
+    color:$chumbo ;
+    border: 1px solid $cinza-medio;
+    border-radius:8px;
+    padding: 16px 24px;
+    line-height: 24px;
+    margin-top:10px;
+}
