@@ -23,6 +23,8 @@
             width: 100%;
             max-width: 380px;
 
+            
+
             &>h1{
                 margin: 64px 0 32px;
                 font-size: 32px;
@@ -51,4 +53,45 @@
         }
     }
    
+}
+
+@media only screen and ( max-width: $mobileL ){
+    .container-register{
+        flex-direction: column;
+        margin: 0 auto;
+
+        & > .content{   
+        margin-top: 100px;
+        flex-direction: column;
+        margin: 0 auto;
+            
+            & > section {
+                width: auto;
+                & > img {
+                margin-top: 400px;   
+                }
+            }
+        }
+
+        & > form.cadastro {
+           width: auto;
+           
+           & > .input-group {
+               flex-direction: column;
+           }
+        }
+    }
+
+}
+
+@media only screen and ( max-width: $tablet ){
+    .content{
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        
+        & img {
+            margin-top: 200px;
+        }
+    }
 }

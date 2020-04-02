@@ -15,22 +15,26 @@
             margin-left:24px;
         }
 
-        & > a {
-            width: 260px;
+        & > .row-mobile {
+            display: block;
             margin-left: auto;
-            margin-top: 0;
-        }
-        & > button {
-            height: 60px;
-            width: 60px;
-            border-radius: 4px;
-            border: 1px solid $cinza-medio;
-            background: transparent;
-            margin-left: 16px;
-            transition: border-color 0,2s;
-
-            :hover{
-                border-color: #999;
+            & > a {
+                width: 260px;
+                margin-left: auto;
+                margin-top: 0;
+            }
+            & > button {
+                height: 60px;
+                width: 60px;
+                border-radius: 4px;
+                border: 1px solid $cinza-medio;
+                background: transparent;
+                margin-left: 16px;
+                transition: border-color 0,2s;
+    
+                :hover{
+                    border-color: #999;
+                }
             }
         }
     }
@@ -76,4 +80,33 @@
         }
     }
 
+}
+
+@media only screen and ( max-width: $tabletM ){
+    .profile-container{
+
+        &>header{ 
+            flex-direction:column;
+
+            & > span {
+                margin:18px 0;
+                
+            }
+            & > .row-mobile {
+                flex-direction: row;
+                display: flex;
+                margin-left: 0;
+            
+                & > a {
+                margin:0 20px 0 0;
+                    
+                }
+            }
+        }
+
+        & > ul {
+        grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
 }

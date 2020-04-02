@@ -1,10 +1,14 @@
 import React from 'react'
-import Cadastro from '../components/Cadastro'
+import OngTxt from '../components/OngTxt'
+import FormOng from '../components/FormOng'
 
 
 export default function Register() { 
   return (
      <div className="container-register">
-         <Cadastro/>
+         <div className="content">
+            <OngTxt/>
+            <FormOng/>
+        </div>
      </div>
   )}

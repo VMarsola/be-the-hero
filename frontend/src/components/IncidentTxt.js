@@ -2,13 +2,11 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import logoImg from '../img/logo.svg'
 import{ FiArrowLeft } from 'react-icons/fi'
-import CadastroIncident from './CadastroIncident'
 
 export default function IncidentTxt() {
   return (
     <>
       <div className="new-incident">
-        <div className="content">
           <section>
               <img src={logoImg} alt="Be the hero"/>
 
@@ -20,9 +18,6 @@ export default function IncidentTxt() {
                   Voltar para home
               </Link>
           </section>
-
-          <CadastroIncident/>
-      </div>
       </div>
     </>
   )}

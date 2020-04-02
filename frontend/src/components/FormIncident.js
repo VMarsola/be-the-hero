@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import api from "../services/api";
-export default function CadastroIncident() {
+export default function FormIncident() {
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");

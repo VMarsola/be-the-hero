@@ -1,6 +1,6 @@
 .logon-container{
     width: 100%;
-    max-width: 1120px;
+    max-width: $WebS;
     height: 100vh;
     margin: 0 auto;
 
@@ -38,4 +38,22 @@
                 }
         }
     }
+}
+
+@media only screen and (max-width: $tablet) {  
+  .logon-container{
+    flex-direction: column;
+    justify-content: center;
+
+    &>section.form{
+      width: auto;
+      margin-right:0;
+      & > img{
+        margin: 0 auto;
+      }
+    }
+  }
+  .heroesImg{
+    display: none;
+  }
 }

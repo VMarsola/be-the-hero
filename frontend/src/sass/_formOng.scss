@@ -1,0 +1,33 @@
+form.cadastro{
+    width: 100%;
+    max-width: 450px;
+
+    & > input {
+        margin-top: 18px;
+    }
+
+    &>.input-group {
+        display: flex;
+        margin-top: 18px;
+
+        & > input + input {
+            margin-left: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: $WebS) {  
+    form.cadastro{
+        &>.input-group {
+            flex-direction: column;
+            width: auto;
+            & > input + input {
+                margin-top: 18px;
+                margin-left: 0px;
+            }
+            &> .inputUf{
+                width: auto !important;
+            }
+        }
+    }
+}

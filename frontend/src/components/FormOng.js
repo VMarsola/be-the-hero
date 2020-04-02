@@ -3,7 +3,7 @@ import api from '../services/api'
 import { useHistory  } from 'react-router-dom'
 
 
-export default function CadastroForm() {
+export default function FormOng() {
 
       const [name, setName] = useState('')
       const [email, setEmail] = useState('')
@@ -64,6 +64,7 @@ const history = useHistory()
                />
             <input
                 placeholder="UF" 
+                className="inputUf"
                 style={{width: 80}}
                 value={uf}
                 onChange={e => setUf(e.target.value)} 

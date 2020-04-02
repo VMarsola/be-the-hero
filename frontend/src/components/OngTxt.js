@@ -2,12 +2,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import logoImg from '../img/logo.svg'
 import{ FiArrowLeft } from 'react-icons/fi'
-import CadastroForm from './CadastroForm'
 
-export default function CadastroTxt() {
+export default function OngTxt() {
   return (
     <>
-     <div className="content">
          <section>
              <img src={logoImg} alt="Be the hero"/>
 
@@ -19,8 +17,5 @@ export default function CadastroTxt() {
                 Não tenho cadastro
              </Link>
          </section>
-
-         <CadastroForm/>
-     </div>
     </>
   )}
