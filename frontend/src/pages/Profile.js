@@ -53,7 +53,7 @@ export default function Profile() {
                 </button>
             </header>
 
-            <h1>casos cadastrados</h1>
+            <h1 className="texto">casos cadastrados</h1>
 
             <ul>
                    {incidents.map(incident =>(

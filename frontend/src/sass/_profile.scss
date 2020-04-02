@@ -8,6 +8,7 @@
     &>header{ 
         display: flex;
         align-items: center;
+        color:$cor-texto;
 
         &span{
             font-size: 20px;
@@ -44,7 +45,7 @@
         list-style: none;
 
         & li{
-            background: $branco;
+            background: $card-night;
             padding: 2px;
             border-radius: 8px;
             position: relative;
@@ -54,6 +55,7 @@
                 right: 24px;
                 top: 24px;
                 border: 0;
+                background: transparent;
                 :hover{
                     opacity: 0.8;
                 }
@@ -61,13 +63,13 @@
             & > strong {
               display: block;
               margin-bottom: 16px;
-              color: $cinza-escuro;
+              color: $cor-subtexto;
             }
             & p + strong{
                 margin-top: 32px;
             }
             & > p {
-                color: $cinza-escuro;
+                color: $cor-subtexto;
                 line-height: 21px;
                 font-size: 16px;
             }

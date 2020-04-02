@@ -26,13 +26,28 @@
             &>h1{
                 margin: 64px 0 32px;
                 font-size: 32px;
+                color: $cor-texto;
             }
 
             &>p{
                 font-size: 18px;
-                color:$cinza-escuro;
+                color:$cor-subtexto;
                 line-height: 32px;
             }
+            &>a{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                color: $cor-subtexto;
+                font-size: 18px;
+                text-decoration: none;
+                font-weight: 500;
+                transition: opacity 0,2s;
+
+                &>svg{
+                    margin-right: 8px;
+                }
+              }   
         }
     }
    
