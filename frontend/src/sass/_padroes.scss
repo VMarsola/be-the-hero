@@ -4,15 +4,16 @@
 
 //colors
 $branco:#fff;
-// $cor-fundo:#f0f0f5; fundo branco  
-$cor-fundo:#141D26;
+$cor-fundo:#f0f0f5;  
+$cor-fundo-dark:#141D26;
 $vermelho:#e02041;
-$cinza-medio:#dcdce6;
 $cinza-escuro: #41414d;
-$chumbo:#333333;
-// $cor-texto:#fff;
-$cor-texto:#fff;
+$form:#333333;
+$form-dark:#243447;
+$cor-texto:#41414d;
+$cor-texto-dark:#fff;
 $cor-subtexto:#A3A4BC;
+$card:#dcdce6;
 $card-night:#243447;
 
 //tamanhos
@@ -29,7 +30,7 @@ $WebS:1120px;
 
 body {
     @extend %texto;
-    background: $cor-fundo;
+    background: $cor-fundo-dark;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -40,9 +41,7 @@ button{
 form input{
     width: 100%;
     height: 60px;
-    // color:$chumbo;
     color:$branco;
-    // border: 1px solid $cinza-medio;
     border: 1px solid $card-night;
     border-radius:8px;
     padding: 0 24px;
@@ -50,7 +49,7 @@ form input{
 }
 
 .texto {
-    color: $cor-texto;
+    color: $cor-texto-dark;
 }
 .sub-texto{
     color:$cor-subtexto;
@@ -80,14 +79,13 @@ form input{
 textarea{
     width: 100%;
     min-height: 140px;
-    color:$cor-texto ;
-    border: 1px solid $cinza-medio;
+    color:$cor-texto-dark ;
+    border: 1px solid $card;
     border-radius:8px;
-    // border-color: padrao;
     border-color: $card-night;
     padding: 16px 24px;
     line-height: 24px;
     margin-top:10px;
-    // background-color: padrao;
     background-color: $card-night;
 }
+
